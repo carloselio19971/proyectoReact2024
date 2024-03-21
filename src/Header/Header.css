@@ -1,0 +1,125 @@
+/* Estilos del Schedule */
+
+.info-schedule-container{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color:white;
+    padding: 10px 10px;
+    font-size: 20px;
+    min-width: 80px; 
+}
+
+.info-schedule-title {
+    margin-right: 20px; 
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.info-schedule-text{
+    padding-left: 40px;
+    border-left: 3px solid white;
+    font-size:20px;
+    line-height: 1;
+}
+
+/* Estilos de Logo and Menu */
+.logo-delivery-container{
+    color:white;
+    background-color:  #173083;
+}
+
+.logo-img{
+    width:200px;
+    margin:20px 20px;
+    background-size: cover; 
+}
+
+.logo-delivery-grid{
+    max-width: 80%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.phone-icon{
+    width: 50px;
+    filter: invert(95%) sepia(5%) saturate(0%) hue-rotate(343deg) brightness(104%) contrast(103%);
+    margin: 20px;
+}
+
+.delivery-info-container{
+    display: flex;
+    margin:20px 20px;
+}
+
+.delivery-info{
+    display: flex;
+}
+
+.delivery-text{
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.delivery-label{
+    color:#fbb905;
+    font-weight: bold;
+   
+}
+
+.delivery-number{
+    margin-top: 2px;
+    font-size: 25px;
+}
+
+.login-logo {
+    width: 40px;
+    margin-top: 20px;
+    margin-left: 30px;
+    filter: invert(78%) sepia(89%) saturate(4487%) hue-rotate(354deg) brightness(105%) contrast(97%);
+}
+
+.logo-ingresar{
+    margin-left: 20px;
+}
+
+.login-info{
+    display: flex;
+}
+
+.login-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.login-text p{
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Version mobiles */
+@media (max-width: 767px) {
+
+    .info-schedule-container{
+        min-width: 300px;
+    }
+
+    .logo-delivery-container {
+        display: none;
+    }
+
+    .info-schedule-title {
+        font-size: 15px;
+        
+    }
+    .info-schedule-text{
+        font-size: 10px;
+    }
+}
