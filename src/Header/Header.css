@@ -24,6 +24,10 @@
 }
 
 /* Estilos de Logo and Menu */
+
+
+
+
 .logo-delivery-container{
     color:white;
     background-color:  #173083;
@@ -38,8 +42,8 @@
 .logo-delivery-grid{
     max-width: 80%;
     margin:0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
     
 }
 
@@ -98,15 +102,191 @@
 }
 
 .login-text p{
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 10px;
     font-weight: bold;
     margin-left: 10px;
 }
 
+/* Estilo del Menu */
+
+.global-navigation-menu-container{
+    background-color: white;
+    z-index: 100;
+}
+
+.c{
+    display: grid;
+    grid-template-columns: 6fr 2fr}
+
+.shop-order{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fbb905;
+    border-radius: 40px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    height: 100px;
+    padding-top: 20px;
+    font-size: 28px;
+    width: 320px;
+    color:#173083;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+
+.shop-order p{
+    font-size: 20px;
+}
+
+.shop-order span{
+    font-weight: bold;
+    color:#e10b19;
+}
+
+.shop-icon img {
+    height: 50px;
+    filter: invert(18%) sepia(78%) saturate(2410%) hue-rotate(218deg) brightness(72%) contrast(95%);
+    padding-right: 20px;
+}
+
+.shopping-cart{
+    background-color: #fbb905;
+    height: 100px;
+    width: 150px;
+    border-radius: 40px;
+    margin-top: 30px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.shopping-cart img {
+    height: 60px;
+    filter: invert(18%) sepia(78%) saturate(2410%) hue-rotate(218deg) brightness(72%) contrast(95%);
+}
+
+.cart-icon-container{
+    position: relative;
+    display: inline-block;
+}
+
+.cart-counter{
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    border-radius: 15px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10px; /* Ajusta la posición vertical según sea necesario */
+    right: -10px;
+
+}
+
+
+menu ul li  {
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu-list{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    font-size: 35px;
+    font-weight: bold;
+    color:#173083;
+}
+
+.menu-link-container{
+    display: flex;
+    margin-right: 50px;
+}
+
+
+
+.menu-link{
+    padding-top:5px;
+    padding-left: 20px;
+    list-style: none;
+    text-decoration: none;
+    color:#173083;
+}
+
+.promotions-list{
+    position: absolute;
+    background-color: white;
+    z-index: 101;
+    padding: 40px;
+    font-size: 40px;
+    border-radius: 20px;
+    color:#173083;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    left: 30% ;
+    top:25%;
+  }
+
+  .promotion-item{
+    list-style: none;   
+  }
+
+  .promotions-list a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #173083; /* Color de enlace */
+  }
+
+ 
+
+.promotions-list li:hover{
+    background-color: #173083;
+    border-radius: 10px;
+    
+    
+}
+
+.promotions-list a:hover{
+    color:#fbb905;
+}
+
+.menu-image-container img{
+    width: 50px;
+}
+
+.item-menu{
+    list-style: none;
+}
+
+.item-menu:hover{
+    border-bottom: 4px solid red;
+    padding-bottom: 5px;
+}
+
+
+.buttons-container{
+    display: flex;
+}
+
+.icon-bembos-mobile{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
 /* Version mobiles */
 @media (max-width: 767px) {
-
+    
+    .mobile-menu{
+        display: block;
+        display: flex;
+    }
+    
     .info-schedule-container{
         min-width: 300px;
     }
@@ -122,4 +302,44 @@
     .info-schedule-text{
         font-size: 10px;
     }
+
+    .menu{
+        display: none;
+    }
+
+    .buttons-container{
+        display: none;
+    }
+
+    .shop-icon-mb img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .shop-order-mb{
+        display: flex;
+        justify-content: center;
+        background-color: #fbb905;
+        border-radius: 40px;
+        height: 50px;
+        padding-top: 20px;
+        font-size: 28px;
+        width: 150px;
+        color:#173083;
+       
+    }
+
+    .shop-text-mb p{
+            font-size: 10px;
+    }
+
+    .contanier-icons-phone-hamburger-menu{
+        font-size: 20px;
+    }
+    
+}
+
+.icon-bembos-mobile img{
+    height: 80px;
+    margin-top: 40px;
 }
