@@ -1,13 +1,13 @@
 import { useState } from "react";
-import combos from "../Imagenes/combos.png";
-import hamburgesaMenu from "../Imagenes/hamburguesamenu.png";
-import promociones from "../Imagenes/promociones.svg";
-import hamburgesas from "../Imagenes/hamburguesa.png";
-import beneficios from "../Imagenes/beneficios.png";
-import tiendaIcon from "../Imagenes/tienda.png";
-import carritoIcon from "../Imagenes/carrito-de-compras.svg";
+import combos from "../../Imagenes/combos.png";
+import hamburgesaMenu from "../../Imagenes/hamburguesamenu.png";
+import promociones from "../../Imagenes/promociones.svg";
+import hamburgesas from "../../Imagenes/hamburguesa.png";
+import beneficios from "../../Imagenes/beneficios.png";
+import tiendaIcon from "../../Imagenes/tienda.png";
+import carritoIcon from "../../Imagenes/carrito-de-compras.svg";
 import { MenuItem } from "./MenuItem";
-import logoMobile from "../Imagenes/logo2bembos.jpg";
+import logoMobile from "../../Imagenes/logo2bembos.jpg";
 
 export const Menu = () => {
   const menuItemsData = [

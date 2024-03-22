@@ -1,6 +1,6 @@
-import logoBembos from '../Imagenes/logobembos.jpg';
-import iconoTelefono from '../Imagenes/llamada-telefonica.svg';
-import hombre from '../Imagenes/hombre.svg';
+import logoBembos from '../../Imagenes/logobembos.jpg';
+import iconoTelefono from '../../Imagenes/llamada-telefonica.svg';
+import hombre from '../../Imagenes/hombre.svg';
 
 export const LogoAndDelivery = () => {
   return (
