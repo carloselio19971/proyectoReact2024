@@ -30,17 +30,19 @@ export const Slider = () => {
   };
 
   return (
-    <>
-   <section className="img-slide">
-      <div className="previous-image">
-        <img src={leftArrowIcon} className='icon-previous' onClick={goToPrevious} alt="Flecha Izquierda" />
+
+    <section className="slider-container">
+      <div className="img-slide">
+        <div className="previous-image">
+          <img src={leftArrowIcon} className='icon-previous' onClick={goToPrevious} alt="Flecha Izquierda" />
+        </div>
+        <div className="next-image">
+          <img src={rightArrowIcon} className='icon-next' onClick={goToNext} alt="Flecha Derecha" />
+        </div>
+        <img src={images[currentIndex]} alt={`imagen ${currentIndex + 1}`} />
       </div>
-      <div className="next-image">
-        <img src={rightArrowIcon} className='icon-next' onClick={goToNext} alt="Flecha Derecha" />
-      </div>
-      <img src={images[currentIndex]} alt={`imagen ${currentIndex + 1}`} />
     </section>
-    </>
+
   )
 }
 

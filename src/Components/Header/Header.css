@@ -228,7 +228,7 @@ menu ul li  {
     color:#173083;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     left: 28% ;
-    top:23%;
+    top:82%;
   }
 
   .promotion-item{
@@ -338,15 +338,15 @@ menu ul li  {
     }
     
 }
-
 .icon-bembos-mobile img{
     height: 80px;
     margin-top: 40px;
 }
 
-
 /*Slider*/
 .img-slide {
+    margin-top: 250px;
+    padding-top: 110px;
     position: relative;
     transition: transform 0.5s ease;
  }
@@ -354,8 +354,11 @@ menu ul li  {
  .img-slide img {
     width: 100%;
     background-size: cover;
+ 
  }
  
+
+
  .previous-image,
  .next-image {
     position: absolute; /* Posicionamiento absoluto para los contenedores de imágenes */
@@ -392,3 +395,15 @@ menu ul li  {
     height: 50px;
     border-radius: 50%;
  }
+
+ .header-wrapper {
+    position: relative;
+  }
+  
+  .fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white; /* Puedes ajustar el color de fondo según sea necesario */
+    z-index: 1000; /* Ajusta el índice z según sea necesario para que el contenido fijo esté por encima del contenido desplazable */
+  }

@@ -5,12 +5,14 @@ import { LogoAndDelivery } from './LogoAndDelivery';
 import './Header.css';
 export const Header = () => {
   return (
-    <div>
-      <Schedule/>
-      <LogoAndDelivery/>
-      <Menu/>
-      <Slider/>
+    <div className="header-wrapper">
+    <div className="fixed-header">
+      <Schedule />
+      <LogoAndDelivery />
+      <Menu />
     </div>
+    <Slider />
+  </div>
   )
 }
 

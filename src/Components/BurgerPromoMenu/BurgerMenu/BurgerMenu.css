@@ -1,7 +1,7 @@
 .burger-menu-container {
     display: grid;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
     justify-content: center; /
   }
@@ -32,12 +32,31 @@
     background-color: #173083;
     width: 80%;
     margin-top: 20px;
-    height: 30px;
+    height: 50px;
     border-radius: 20px;
+    margin-bottom: 20px;
   }
 
   .burger-card button a {
     list-style: none;
     text-decoration: none;
     color:white;
+  }
+
+  .burger-card h3{
+    padding-top:20px;
+  }
+
+  .container-burger-menu-header{
+    display: grid;
+    grid-template-columns: 80% 10%;
+  }
+
+  .paginas-promocion{
+      margin-top: 20px;
+      background-color: #173083;
+      width:50px;
+      color:white;
+      border-radius: 20px;
+      text-align: center;
   }
