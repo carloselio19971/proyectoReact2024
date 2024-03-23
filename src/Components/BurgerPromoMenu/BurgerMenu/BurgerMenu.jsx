@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { readBurgerMenu } from '../../../Services/Services';
-
+import '../BurgerMenu/BurgerMenu.css';
+import { BurgerMenuItem } from './BurgerMenuItem';
 export const BurgerMenu = () => {
   const [burgerMenuData, setBurgerMenuData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -32,14 +33,14 @@ export const BurgerMenu = () => {
   }
 
   return (
-    <div>
-    <h2>Menús de Hamburguesas</h2>
-    <ul>
-      {burgerMenuData.map(menuItem => (
-        <li key={menuItem.id}>{menuItem.nombre}</li>
-      ))}
-    </ul>
-  </div>
+    <div className='ancho'>
+      <h2 className='title-menu-burge'>Menús de Hamburguesas</h2>
+      <div className="burger-menu-container ">
+              {burgerMenuData.map(burger => (
+                <BurgerMenuItem key={burger.id} burger={burger} />
+              ))}
+      </div>     
+    </div>
   )
 }
 

@@ -1,0 +1,43 @@
+.burger-menu-container {
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-content: center; /
+  }
+  
+  /* Estilos para BurgerItem */
+  .burger-card {
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .11);
+  }
+  
+  .burger-card img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+   
+  }
+
+  .title-menu-burge{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color:#173083;
+    font-size: 45px;
+  }
+  .burger-card button{
+    background-color: #173083;
+    width: 80%;
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 20px;
+  }
+
+  .burger-card button a {
+    list-style: none;
+    text-decoration: none;
+    color:white;
+  }
