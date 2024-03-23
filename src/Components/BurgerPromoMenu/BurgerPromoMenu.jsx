@@ -1,11 +1,12 @@
-import { BurgerMenu } from "./BurgerMenu"
-import { PromoBurgers } from "./PromoBurgers"
+import { BurgerMenu } from "./BurgerMenu/BurgerMenu"
+import { PromoBurgers } from "./BurgerPromo/PromoBurgers"
 
 export const BurgerPromoMenu = () => {
+  
   return (
     <div>
        <BurgerMenu/>
-       <PromoBurgers/>
+      <PromoBurgers/>
     </div>
   )
 }
