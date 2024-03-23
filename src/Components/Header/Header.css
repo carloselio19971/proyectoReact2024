@@ -343,3 +343,52 @@ menu ul li  {
     height: 80px;
     margin-top: 40px;
 }
+
+
+/*Slider*/
+.img-slide {
+    position: relative;
+    transition: transform 0.5s ease;
+ }
+ 
+ .img-slide img {
+    width: 100%;
+    background-size: cover;
+ }
+ 
+ .previous-image,
+ .next-image {
+    position: absolute; /* Posicionamiento absoluto para los contenedores de imágenes */
+    top: 50%; /* Coloca el contenedor en el centro verticalmente */
+    transform: translateY(-50%); /* Centra el contenedor verticalmente */
+ }
+ 
+ .previous-image {
+    left: 5%; /* Ajusta la posición del contenedor a la izquierda */
+    background-color: black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .next-image {
+    right: 5%; /* Ajusta la posición del contenedor a la derecha */
+    background-color: black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .icon-next,
+ .icon-previous {
+    filter: invert(100%) sepia(0%) saturate(14%) hue-rotate(297deg) brightness(106%) contrast(103%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+ }
