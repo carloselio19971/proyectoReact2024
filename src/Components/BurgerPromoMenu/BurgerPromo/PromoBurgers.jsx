@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import { readPromoBurgers } from '../../../Services/Services'
-
+import '../BurgerPromo/BurgePromo.css';
+import { Pagination } from '../../Pagination/Pagination';
+import { PromoBurgerItem } from './PromoBurgerItem';
 
 export const PromoBurgers = () => {
   const [promoBurgersData, setPromoBurgersData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  //Paginacion
+  const [currentPage,setCurrentPage]=useState(1);
+  const [cantidadPromo,setcantidadPromo]=useState(5);
 
   useEffect(() => {
     const readData = async () => {
@@ -24,6 +29,15 @@ export const PromoBurgers = () => {
     readData();
   }, []);
 
+    //El inidice final es la pagina actual y la cantidad de paginas
+    const indexFinal=currentPage*cantidadPromo;
+    const indexInicial=indexFinal-cantidadPromo;
+    const nPromo=promoBurgersData.slice(indexInicial,indexFinal);
+    const nPaginas=Math.ceil(promoBurgersData.length /cantidadPromo);
+    console.log(nPaginas);
+
+
+
   if (loading) {
     return <div>Cargando...</div>;
   }
@@ -33,13 +47,26 @@ export const PromoBurgers = () => {
   }
 
   return (
-    <div>
-    <h2>Promociones de Hamburguesas</h2>
-    <ul>
-      {promoBurgersData.map(promoItem => (
-        <li key={promoItem.id}>{promoItem.nombre}</li>
-      ))}
-    </ul>
-  </div>
+    <div className='ancho'>
+       <div className='container-burger-promo-header'>
+          <div className='title-promo-burge'>
+          <h2>Promociones de Hamburguesas</h2>
+          </div>
+       <div  div className='contenedor-pagination-promo'>
+          <Pagination
+          setCurrentPage={setCurrentPage} currentPage={currentPage} nPaginas={nPaginas} 
+           /> 
+          </div>
+          </div>
+        <div className="burger-promo-container">
+        {nPromo.map(burger => (
+                <PromoBurgerItem key={burger.id} burger={burger} />
+              ))}
+        </div>
+        <div className='paginas-promocion'>
+        { <h3>{currentPage} / {nPaginas}</h3> }
+        </div>
+    </div>
+  
   )
 }

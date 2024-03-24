@@ -5,8 +5,9 @@ export const BurgerPromoMenu = () => {
   
   return (
     <div>
-       <BurgerMenu/>
-      <PromoBurgers/>
+         <PromoBurgers/>
+         <BurgerMenu/>
+   
     </div>
   )
 }
