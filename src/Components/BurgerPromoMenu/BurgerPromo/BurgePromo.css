@@ -1,9 +1,9 @@
 
 .burger-promo-container{
-    display: flex;
-    grid-template-columns: repeat(5,1fr);
-}
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
+}
 .container-burger-promo-header{
     display: flex;
     justify-content: space-between;
