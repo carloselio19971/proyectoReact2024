@@ -143,7 +143,7 @@
 
 .shop-order{
     background-color: #fbb905;
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-content: center;
     border-radius: 20px;
@@ -303,65 +303,7 @@ menu ul li  {
     display: none;
 }
 
-/* Version mobiles */
-@media (max-width: 767px) {
-    
-    .mobile-menu{
-        display: block;
-        display: flex;
-    }
-    
-    .info-schedule-container{
-        min-width: 300px;
-    }
 
-    .logo-delivery-container {
-        display: none;
-    }
-
-    .info-schedule-title {
-        font-size: 15px;
-        
-    }
-    .info-schedule-text{
-        font-size: 10px;
-    }
-
-    .menu{
-        display: none;
-    }
-
-    .buttons-container{
-        display: none;
-    }
-
-    .shop-icon-mb img{
-        width: 30px;
-        height: 30px;
-    }
-
-    .shop-order-mb{
-        display: flex;
-        justify-content: center;
-        background-color: #fbb905;
-        border-radius: 40px;
-        height: 50px;
-        padding-top: 20px;
-        font-size: 28px;
-        width: 150px;
-        color:#173083;
-       
-    }
-
-    .shop-text-mb p{
-            font-size: 10px;
-    }
-
-    .contanier-icons-phone-hamburger-menu{
-        font-size: 20px;
-    }
-    
-}
 .icon-bembos-mobile img{
     height: 80px;
     margin-top: 40px;
@@ -430,4 +372,10 @@ menu ul li  {
     width: 100%;
     background-color: white; /* Puedes ajustar el color de fondo según sea necesario */
     z-index: 1000; /* Ajusta el índice z según sea necesario para que el contenido fijo esté por encima del contenido desplazable */
+  }
+
+
+  .shop-text p{
+    padding-left: 25px;
+    font-size: 20px;
   }
