@@ -52,8 +52,8 @@ export const Menu = () => {
   };
 
   return (
-    <div className="global-navigation-menu-container">
-      <div className="c width ancho">
+    <div className="global-navigation-menu-container ancho">
+      <div className="c width ">
         <div className="menu">
           <nav>
             <ul className="menu-list" onMouseLeave={handleMouseLeave}>
@@ -92,9 +92,6 @@ export const Menu = () => {
             </ul>
           )}
         </div>
-        {/* Contenedor de botones */}
-        <div className="buttons-container">
-          {/* Botón "Pide en tiendas" */}
           <div className="shop-order">
             <div className="shop-icon">
               <img src={tiendaIcon} alt="Tienda Icon" />{" "}
@@ -105,38 +102,13 @@ export const Menu = () => {
                 Pide en tiendas <span>SIN COLAS</span>
               </p>
             </div>
-          </div>
           {/* Botón "Carrito de compras" */}
-          <div className="shopping-cart">
+        </div>
+        <div className="shopping-cart">
             <div className="cart-icon-container">
               <img src={carritoIcon} alt="Carrito Icon" />{" "}
               {/* Añadido atributo alt */}
               <div className="cart-counter">0</div>
-            </div>
-          </div>
-        </div>
-        <div className="mobile-menu">
-            <div className="icon-bembos-mobile">
-              <img src={logoMobile} alt="mobile-icon" />
-            </div>
-            <div className="shop-order-mb">
-              <div className="shop-icon-mb">
-                <img src={tiendaIcon} alt="Tienda Icon" />{" "}
-                {/* Añadido atributo alt */}
-              </div>
-              <div className="shop-text-mb">
-                <p>
-                  Pide en tiendas <span>SIN COLAS</span>
-                </p>
-              </div>
-              <div className="contanier-icons-phone-hamburger-menu">
-                <div className="icon-phone">
-                  <p>Soy un telefono</p>
-                </div>
-                <div className="hamburger-menu">
-                  <p>Hamburgesa</p>
-                </div>
-              </div>
             </div>
           </div>
       </div>
