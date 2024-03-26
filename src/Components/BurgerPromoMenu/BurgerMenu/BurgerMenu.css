@@ -60,3 +60,19 @@
       border-radius: 20px;
       text-align: center;
   }
+
+
+
+  @media only screen and (max-width: 767px) {
+    .container-burger-promo-header, .burger-promo-container, .paginas-promocion{
+        display: none;
+    }
+    .container-burger-menu-header,.burger-menu-container ,.paginas-promocion{
+      display: none;
+    }
+    
+    .contenedor-global-promo-burger{
+      display: none;
+    }
+
+  }

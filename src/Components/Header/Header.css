@@ -1,14 +1,16 @@
 /* Estilos del Schedule */
 
 .info-schedule-container{
+    width: 100%;
     background-color: black;
     display: flex;
     justify-content: center;
     color:white;
     padding: 10px 10px;
     font-size: 20px;
-    min-width: 80px; 
 }
+
+
 
 .info-schedule-title {
     margin-right: 20px; 
@@ -143,31 +145,29 @@
 
 .shop-order{
     background-color: #fbb905;
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     border-radius: 20px;
     align-items: center;
     margin-top: 20px;
     text-align: center;
-    height: 60%;
+    height: 70%;
     margin-top: 35px;
 }
 .shopping-cart{
     background-color: #fbb905;
     width: 80%;
     border-radius: 20px;
-    height: 55%;
+    height: 70%;
     margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-.shop-order p{
-    font-size: 14px;
-    font-weight: bold;
+.shop-text p{
+    font-size: 5px;
 }
 
 .shop-order span{
@@ -374,8 +374,129 @@ menu ul li  {
     z-index: 1000; /* Ajusta el índice z según sea necesario para que el contenido fijo esté por encima del contenido desplazable */
   }
 
-
   .shop-text p{
     padding-left: 25px;
     font-size: 20px;
   }
+
+  .menu-mobiles-container{
+    display: none;
+  }
+
+  @media only screen and (max-width: 767px) {
+
+    .logo-delivery-container{
+        display: none;  
+    }
+
+    .global-navigation-menu-container{
+        display: none;
+        
+    }
+
+    .info-schedule-container{
+        display: block;
+        width: 100%;
+    }
+
+    .info-schedule-title p {
+        text-align: center;
+    }
+
+    .info-schedule-text{
+        border: none;
+        padding-top: 8px;
+        text-align: center;
+        line-height:1.2;
+        padding-bottom: 10px;
+       
+        
+    }
+    
+
+    .img-slide {
+        margin-top: 100px;
+        position: relative;
+        transition: transform 0.5s ease;
+     }
+
+    .menu-mobiles-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .shop-order{
+        width: 100%;
+        margin: 10px;
+    }
+
+    .shop-text p{
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    .img-mobile img{
+        padding-left: 20px;
+
+    }
+
+    .shop-icon img {
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+    }
+
+    .icon-menu{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .icon-menu img {
+        width: 20px;
+        filter: invert(14%) sepia(23%) saturate(7471%) hue-rotate(220deg) brightness(97%) contrast(98%);
+    }
+
+
+    .slider-container {
+        max-width: 100%; /* ajusta el ancho máximo para dispositivos móviles */
+      }
+      
+      .icon-previous,
+      .icon-next {
+        width: 10px; /* ajusta el tamaño para dispositivos móviles */
+      }
+
+
+      .previous-image {
+        margin-top: 50px;
+        left: 5%; /* Ajusta la posición del contenedor a la izquierda */
+        background-color: black;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     
+     .next-image {
+        margin-top: 50px;
+        right: 5%; /* Ajusta la posición del contenedor a la derecha */
+        background-color: black;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+
+     .paginas-promocion{
+        display: none;
+     }
+
+    }
+
+
+
+

@@ -49,6 +49,7 @@ export const BurgerMenu = () => {
 
   return (
     <div className='ancho'>
+      <div className='container-promo'>
       <div className='container-burger-menu-header'>
       <h2 className='title-menu-burge'>Menús de Hamburguesas</h2>
       <div className='contenedor-pagination'>
@@ -67,6 +68,8 @@ export const BurgerMenu = () => {
       <div className='paginas-promocion'>
         { <h3>{currentPage} / {nPaginas}</h3> }
         </div>
+      </div>
+      
     </div>
   )
 }

@@ -48,11 +48,12 @@ export const PromoBurgers = () => {
 
   return (
     <div className='ancho'>
-       <div className='container-burger-promo-header'>
+    <div className='contenedor-global-promo-burger'>
+    <div className='container-burger-promo-header'>
           <div className='title-promo-burge'>
           <h2>Promociones de Hamburguesas</h2>
           </div>
-       <div  div className='contenedor-pagination-promo'>
+       <div className='contenedor-pagination-promo'>
           <Pagination
           setCurrentPage={setCurrentPage} currentPage={currentPage} nPaginas={nPaginas} 
            /> 
@@ -66,6 +67,9 @@ export const PromoBurgers = () => {
         <div className='paginas-promocion'>
         { <h3>{currentPage} / {nPaginas}</h3> }
         </div>
+
+    </div>
+      
     </div>
   
   )

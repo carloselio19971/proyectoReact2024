@@ -8,6 +8,10 @@ import tiendaIcon from "../../Imagenes/tienda.png";
 import carritoIcon from "../../Imagenes/carrito-de-compras.svg";
 import { MenuItem } from "./MenuItem";
 import logoMobile from "../../Imagenes/logo2bembos.jpg";
+import llamadaTelefonica from "../../Imagenes/llamada-telefonica-_1_.svg";
+import menumobile from "../../Imagenes/menu.svg";
+
+
 
 export const Menu = () => {
   const menuItemsData = [
@@ -52,7 +56,8 @@ export const Menu = () => {
   };
 
   return (
-    <div className="global-navigation-menu-container ancho">
+    <>
+     <div className="global-navigation-menu-container ancho">
       <div className="c width ">
         <div className="menu">
           <nav>
@@ -113,5 +118,30 @@ export const Menu = () => {
           </div>
       </div>
     </div>
+
+    {/* version-mobile */}
+    <div className="menu-mobiles-container">
+      <div className="img-mobile">
+        <img src={logoMobile}/>
+      </div>
+      <div className="shop-order">
+            <div className="shop-icon">
+              <img src={tiendaIcon} alt="Tienda Icon" />{" "}
+              {/* Añadido atributo alt */}
+            </div>
+            <div className="shop-text">
+              <p>
+                Pide en tiendas <span>SIN COLAS</span>
+              </p>
+            </div>
+          {/* Botón "Carrito de compras" */}
+        </div>
+      <div className="icon-menu">
+       <img src={llamadaTelefonica}></img>
+       <img src={menumobile}></img>
+     </div>
+     </div>
+    </>
+   
   );
 };
