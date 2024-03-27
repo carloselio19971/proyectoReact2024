@@ -1,5 +1,7 @@
 import { BurgerMenu } from "./BurgerMenu/BurgerMenu"
 import { PromoBurgers } from "./BurgerPromo/PromoBurgers"
+import { SocialBembos } from "./SocialBembos/SocialBembos"
+
 
 export const BurgerPromoMenu = () => {
   
@@ -7,7 +9,7 @@ export const BurgerPromoMenu = () => {
     <div>
          <PromoBurgers/>
          <BurgerMenu/>
-   
+         <SocialBembos/>
     </div>
   )
 }

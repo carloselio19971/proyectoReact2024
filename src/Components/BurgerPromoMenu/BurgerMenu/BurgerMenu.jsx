@@ -3,6 +3,8 @@ import { readBurgerMenu } from '../../../Services/Services';
 import '../BurgerMenu/BurgerMenu.css';
 import { BurgerMenuItem } from './BurgerMenuItem';
 import { Pagination} from '../../Pagination/Pagination';
+import menumobile from "../../../Imagenes/banner-canjear.jpg";
+
 
 
 export const BurgerMenu = () => {
@@ -69,7 +71,10 @@ export const BurgerMenu = () => {
         { <h3>{currentPage} / {nPaginas}</h3> }
         </div>
       </div>
-      
+      <div className='promos-bembos-banner'>
+        <img src={menumobile}></img>
+      </div>
+
     </div>
   )
 }

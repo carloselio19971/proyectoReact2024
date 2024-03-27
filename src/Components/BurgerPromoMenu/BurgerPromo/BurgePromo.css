@@ -222,3 +222,11 @@ button{
     left: 10%;
 
 }
+
+@media only screen and (max-width: 767px) {
+    .paginas-promocion{
+        display: none;
+    }
+}
+
+  

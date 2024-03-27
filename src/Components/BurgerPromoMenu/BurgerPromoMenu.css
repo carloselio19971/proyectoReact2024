@@ -1,18 +1,1 @@
-@media only screen and (max-width: 767px) {
-.container-burger-promo-header {
-    display: none;
-}
 
-.burger-promo-container{
-    display: none;
-}
-
-.paginas-promocion{
-    display: none;
-}
-
-.content-promotion-card{
-    display: none;
-}
-
-}
