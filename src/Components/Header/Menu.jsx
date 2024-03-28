@@ -1,4 +1,3 @@
-import { useState } from "react";
 import combos from "../../Imagenes/combos.png";
 import hamburgesaMenu from "../../Imagenes/hamburguesamenu.png";
 import promociones from "../../Imagenes/promociones.svg";
@@ -10,31 +9,33 @@ import { MenuItem } from "./MenuItem";
 import logoMobile from "../../Imagenes/logo2bembos.jpg";
 import llamadaTelefonica from "../../Imagenes/llamada-telefonica-_1_.svg";
 import menumobile from "../../Imagenes/menu.svg";
-
-
+import { useLocation } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 
 export const Menu = () => {
   const menuItemsData = [
-    { imageSource: combos, text: "MENÚ", link: "https://www.youtube.com/" },
+    { imageSource: combos,
+     text: "MENÚ", 
+     link: "/menu" },
     {
       imageSource: hamburgesaMenu,
       text: "COMBOS",
-      link: "https://www.facebook.com/?locale=es_LA",
+      link: "/combos",
     },
     {
       imageSource: promociones,
       text: "PROMOCIONES",
-      link: "https://www.instagram.com/",
+      link: "/promociones",
     },
     {
       imageSource: hamburgesas,
       text: "HAMBURGUESAS",
-      link: "https://www.toyotaperu.com.pe/",
+      link: "/hamburguesas",
     },
     {
       imageSource: beneficios,
       text: "BENEFICIOS",
-      link: "https://www.kia.com/pe/main.html",
+      link: "/hamburguesas",
     },
   ];
 
@@ -46,6 +47,14 @@ export const Menu = () => {
   ];
 
   const [showPromotionsList, setShowPromocionesList] = useState(false);
+  const [showSlider, setShowSlider] = useState(true); 
+  const location = useLocation();
+
+  useEffect(() => {
+    // Ocultar el slider cuando cambie a la vista del menú
+    setShowSlider(location.pathname !== "/menu");
+  }, [location]);
+
 
   const handleMouseEnter = () => {
     setShowPromocionesList(true);

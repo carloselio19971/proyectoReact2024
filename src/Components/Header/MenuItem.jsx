@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export const MenuItem = ({ imageSource, text, link, onMouseEnter, onMouseLeave }) => {
 
     const specialStyle = text === "PROMOCIONES" ? {
@@ -10,7 +11,7 @@ export const MenuItem = ({ imageSource, text, link, onMouseEnter, onMouseLeave }
               <div className='menu-image-container'>
                 <img src={imageSource} alt={text} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} style={specialStyle} />
               </div>
-              <a className="menu-link" target="_blank" href={link}>{text}</a>
+              <Link className="menu-link" to={link}>{text}</Link>
             </div>
           </li>
         );

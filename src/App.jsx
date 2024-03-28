@@ -1,22 +1,31 @@
-import React, {useState } from "react";
-import { BurgerPromoMenu } from "./Components/BurgerPromoMenu/BurgerPromoMenu"
-import { Header } from "./Components/Header"
+import React from "react";
+import { HashRouter  as Router, Routes, Route } from "react-router-dom";
+import { BurgerPromoMenu } from "./Components/BurgerPromoMenu/BurgerPromoMenu";
+import { Header } from "./Components/Header";
 import { Footer } from "./Components/FooterBembos/Footer";
-//Contexto de la aplicacion
-export const ContextBurgerPromo=React.createContext('');
+import { CombosPage } from "./Components/CombosPage/CombosPage";
+import { PromotionsPage } from "./Components/PromotionsPage/PromotionsPage";
+import { HamburgersPage } from "./Components/HamburgersPage/HamburgersPage";
+import { BenefitsPage } from "./Components/BenefitsPage/BenefitsPage";
+import { MenuPage } from "./Components/MenuPage/MenuPage";
+
+export const ContextBurgerPromo = React.createContext('');
 
 export const App = () => {
-
-  const [BurgerPromo, setBurgerPromo] = useState(5);
-
   return (
-    <div>
-      <Header/>
-      <ContextBurgerPromo.Provider value={BurgerPromo}>
-        <BurgerPromoMenu/>
-      </ContextBurgerPromo.Provider>
-      <Footer label="He leido y revisado los terminos y condiciones " />
-      
-    </div>
-  )
-}
+    <Router>
+      <div>
+        <Header />
+        <Routes>
+          <Route path="/" element={<BurgerPromoMenu />} />
+          <Route path="/menu" element={<MenuPage />} />
+          <Route path="/combos" element={<CombosPage />} />
+          <Route path="/promociones" element={<PromotionsPage />} />
+          <Route path="/hamburguesas" element={<HamburgersPage />} />
+          <Route path="/beneficios" element={<BenefitsPage />} />
+        </Routes>
+        <Footer label="He leído y revisado los términos y condiciones" />
+      </div>
+    </Router>
+  );
+};
