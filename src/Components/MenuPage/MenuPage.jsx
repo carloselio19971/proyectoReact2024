@@ -1,12 +1,13 @@
 import './MenuPage.css';
 import ubicacion from '../../Imagenes/ubicacion.png';
-import bannerImage1 from '../../Imagenes/banner-1.jpg';
-import bannerImage2 from '../../Imagenes/banner-2.jpg';
-import bannerImage3 from '../../Imagenes/banner-3.jpg';
-import bannerImage4 from '../../Imagenes/banner-4.jpg';
+import bannerImage1 from '../../Imagenes/menu-1.webp';
+import bannerImage2 from '../../Imagenes/menu-2.webp';
+import bannerImage3 from '../../Imagenes/menu-3.webp';
+import bannerImage4 from '../../Imagenes/menu-4.webp';
 import rightArrowIcon from '../../Imagenes/flecha-derercha.svg';
 import leftArrowIcon from '../../Imagenes/flecha-izquierda.svg'
 import { useState } from 'react';
+import { MenuHamburgesas } from '../MenuHamburgesas/MenuHamburgesas';
 
 
 
@@ -57,6 +58,8 @@ export const MenuPage = () => {
     
     </div>
     <section className="slider-container-2 ancho">
+      <h2>Conoce nuestro Menú | BEMBOS</h2>
+      <hr/>
       <div className="img-slide">
         <div className="previous-image">
           <img src={leftArrowIcon} className='icon-previous' onClick={goToPrevious} alt="Flecha Izquierda" />
@@ -67,6 +70,10 @@ export const MenuPage = () => {
         <img src={images[currentIndex]} alt={`imagen ${currentIndex + 1}`} />
       </div>
     </section>
+    <section>
+      <MenuHamburgesas/>
+    </section>
+
     </>
   )
 }

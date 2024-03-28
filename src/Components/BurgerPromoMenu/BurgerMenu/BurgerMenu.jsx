@@ -6,9 +6,7 @@ import { Pagination} from '../../Pagination/Pagination';
 import menumobile from "../../../Imagenes/banner-canjear.jpg";
 
 
-
 export const BurgerMenu = () => {
-
   const [burgerMenuData, setBurgerMenuData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
