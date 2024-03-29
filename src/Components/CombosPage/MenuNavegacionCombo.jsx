@@ -7,28 +7,28 @@ export const MenuNavegacionCombo = () => {
       <nav>
           <ul>
             <li>
-            <NavLink to="combos">Combos</NavLink>
+            <NavLink to="combos" activeclassname="active">Combos</NavLink>
             </li>
             <li>
-            <NavLink to="combos/hamburguesas">Hamburguesas</NavLink>
+            <NavLink to="combos/hamburguesas" activeclassname="active">Hamburguesas</NavLink>
             </li>
             <li>
-            <NavLink to="combos/menuPlato">Menús Plato</NavLink> 
+            <NavLink to="combos/menuPlato" activeclassname="active">Menús Plato</NavLink> 
             </li>
             <li>
-            <NavLink to="combos/loncherita">Loncherita</NavLink> 
+            <NavLink to="combos/loncherita" activeclassname="active">Loncherita</NavLink> 
             </li>
             <li>
-            <NavLink to="combos/complementos">Complemento</NavLink>   
+            <NavLink to="combos/complementos"  activeclassname="active">Complemento</NavLink>   
             </li>
             <li>
-            <NavLink to="combos/bebidas">Bebidas</NavLink>   
+            <NavLink to="combos/bebidas" activeclassname="active">Bebidas</NavLink>   
             </li>
             <li>
-            <NavLink to="combos/helado">Helado</NavLink>   
+            <NavLink to="combos/helado"  activeclassname="active">Helado</NavLink>   
             </li>
             <li>
-            <NavLink to="combos/inkachip">Inka Chips</NavLink> 
+            <NavLink to="combos/inkachip"   activeclassname="active">Inka Chips</NavLink> 
             </li>
           </ul>
         </nav>

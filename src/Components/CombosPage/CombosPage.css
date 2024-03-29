@@ -1,6 +1,3 @@
-.container-combos{
-   
-}
 
 .menu-navegacion-combos{
     border: 1px solid #173083;
@@ -22,4 +19,23 @@
     text-decoration: none;
     color:black;
     font-weight: bold;
+}
+
+
+
+.burger-combo-menu-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.container-combos-bembos h2{
+    color:#173083;
+   padding-bottom: 20px;
+}
+
+.terminos-condiciones span{
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 10px;
 }

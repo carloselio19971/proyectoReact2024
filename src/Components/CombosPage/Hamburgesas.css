@@ -1,0 +1,10 @@
+.container-hamburgesas-bembos h1{
+    color:#173083;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.burger-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}

@@ -21,3 +21,25 @@ export const readPromoBurgers = async () => {
     throw error;
   }
 };
+
+
+export const readCombosHamburgesas = async () => {
+  try {
+    const response = await axios.get(`${BASE_URL}/combos`);
+    return response.data;
+  } catch (error) {
+    console.error('Error al obtener los combos de hamburguesas:', error);
+    throw error;
+  }
+};
+
+export const readHamburguesas = async () => {
+  try {
+    const response = await axios.get(`${BASE_URL}/hamburguesas`);
+    return response.data;
+  } catch (error) {
+    console.error('Error al obtener las hamburguesas:', error);
+    throw error;
+  }
+};
+
