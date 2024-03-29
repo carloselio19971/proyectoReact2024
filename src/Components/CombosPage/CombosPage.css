@@ -1,0 +1,25 @@
+.container-combos{
+   
+}
+
+.menu-navegacion-combos{
+    border: 1px solid #173083;
+    border-radius: 12px;
+    margin: 50px;
+    height: 50px;
+
+}
+
+.menu-navegacion-combos nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 10px;
+    gap:30px
+}
+
+.menu-navegacion-combos nav ul li a {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}

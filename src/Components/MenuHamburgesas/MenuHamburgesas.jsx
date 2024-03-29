@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { readBurgerMenu } from '../../Services/Services';
-import { BurgerMenuItem } from "../BurgerPromoMenu/BurgerMenu/BurgerMenuItem";
+import {BurgerMenuItem} from '../BurgerPromoMenu/BurgerMenu/BurgerMenuItem'
 export const MenuHamburgesas = () => {
-
+BurgerMenuItem
     const [burgerMenuData, setBurgerMenuData] = useState([]);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(true);
