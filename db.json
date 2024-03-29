@@ -71,6 +71,36 @@
 			"link": "combo-clasica"
 		}
 	],
+	"platos":[
+		{
+			"nombre": "Menu a lo pobre",
+			"precio": 18.9,
+			"id": 1,
+			"img": "https://www.bembos.com.pe/_ipx/q_85,w_275,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-a-lo-pobre-menu-2024.jpg",
+			"link": "menu-a-lo-pobre"
+		},
+		{
+			"nombre": "Menu Taypa",
+			"precio": 18.9,
+			"id": 2,
+			"img": "https://www.bembos.com.pe/_ipx/q_85,w_275,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-taypa-menu-2024.jpg",
+			"link": "menu-taypa"
+		},
+		{
+			"nombre": "Menu Pechugon",
+			"precio": 16.9,
+			"id": 3,
+			"img": "https://www.bembos.com.pe/_ipx/q_85,w_275,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-pechugon-menu-2024.jpg",
+			"link": "menu-pechugon"
+		},
+		{
+			"nombre": "Burger Menu",
+			"precio": 16.9,
+			"id": 4,
+			"img": "https://www.bembos.com.pe/_ipx/q_85,w_275,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-burger-menu-2024.jpg",
+			"link": "hamburguesa-clasica-bembos"
+		}
+	],
 	"hamburguesas": [
 		{
 			"nombre": "Hamburguesa Clásica Bembos",
