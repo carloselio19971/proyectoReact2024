@@ -35,7 +35,7 @@ export const Menu = () => {
     {
       imageSource: beneficios,
       text: "BENEFICIOS",
-      link: "/hamburguesas",
+      link: "/beneficios",
     },
   ];
 

@@ -1,0 +1,19 @@
+.contanier-header-beneficios{
+    background-color: #173083;
+    border-radius: 20px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}   
+
+.contanier-header-beneficios h2{
+    color: #fbb905;;
+}
+
+.tipos-beneficios{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+}
